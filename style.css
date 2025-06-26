@@ -1,0 +1,240 @@
+/* ========== RESET ========== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========== CONTAINER GLOBAL ========== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ========== HEADER FULLSCREEN ENTIÈRE PAGE ========== */
+.header-home {
+  background-image: url('images/7.jpg'); /* ta propre image ici */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.overlay p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+nav a.active {
+  color: #005f6b;
+  border-bottom: 2px solid #005f6b;
+}
+
+
+
+/* ========== NAVIGATION ========== */
+nav {
+  margin-top: 20px;
+}
+nav a {
+  color: #dce6e5;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #ffffff;
+}
+
+/* ========== ANIMATIONS APPARITION ========== */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+.delay {
+  animation-delay: 0.5s;
+}
+.delay2 {
+  animation-delay: 1s;
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+.appear {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: appear 1.2s forwards;
+}
+@keyframes appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== SECTION INFO ACCUEIL ========== */
+.info-section {
+  background: #e0f7fa;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin: 50px auto;
+}
+.info-section h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.info-section ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.info-section li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+/* ========== CARDS SECTIONS ========== */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* ========== BOUTONS ========== */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007b8f;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background-color: #005f6b;
+}
+
+/* ========== FORMULAIRE DE CONTACT ========== */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+.contact-form {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+}
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007b8f;
+  outline: none;
+}
+.contact-form button {
+  background-color: #007b8f;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  width: 100%;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.contact-form button:hover {
+  background-color: #005f6b;
+}
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  color: #007b8f;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background-color: #007b8f;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Guide Touristique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Contactez-nous</h1>
+    <p>Une question ? Une réservation ? Écrivez-nous dès maintenant.</p>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="attractions.html">Attractions</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+  <main class="container contact-container">
+    <form class="contact-form">
+      <h2>Envoyez-nous un message</h2>
+      <label for="name">Nom complet</label>
+      <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+
+      <label for="email">Adresse email</label>
+      <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Guide Touristique</p>
+  </footer>
+</body>
+</html>
